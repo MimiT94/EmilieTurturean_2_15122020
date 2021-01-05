@@ -1,0 +1,165 @@
+/*****importation du font****/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+
+:root{
+   font-size: 12px;
+   --primary: #0065FC;
+   --secondary: #DEEBFF ;
+   --fond: #F2F2F2;
+ 
+}
+i {
+   color: var(--primary);
+  
+}
+aside, footer {
+   background-color: var(--fond);
+}
+
+ul li {
+  list-style: none;
+  text-decoration: none;
+}
+body{
+   font-family: Raleway, sans-serif;
+   
+   
+}
+a {
+   text-decoration: none;
+   justify-content: space-between;
+
+}
+/*****nav bar****/
+
+  
+nav ul li {
+  
+   
+   list-style-type: none;
+   display: inline-block;
+   text-decoration: none;
+   font-size: 2rem;
+   
+}
+nav ul li:hover {
+   border-bottom: 1px solid #0065FC;
+  transition-delay: .5s;
+  transition-timing-function: ease-in-out;
+}
+aside {
+   background-color: var(--fond);
+}
+
+.espace {
+   padding:15px;
+}
+
+
+.info button {
+   background-color: white; 
+   border: 1px solid grey;
+   border-radius: 15px;
+   color: black;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   padding: 0;
+   letter-spacing: 0;
+  
+   
+}
+button i {
+
+   border-radius: 20px;
+   padding-left: 5px;
+   padding-right: 5px;
+   font-size: 20px;
+   background-color: var(--secondary);
+}
+
+
+
+
+
+.fa-info-circle { 
+   background-color: var(--primary) !important;
+   color: white !important;
+   font-size: 2rem;
+   border-radius: 40px;
+   border: var(--fond);
+}
+.fa-chart-line /*****popularité****/
+{
+   color: black;
+}
+
+
+
+
+
+footer ul li {
+   text-decoration: none;
+   padding: 5px;
+}
+figure {
+  width: auto;
+  background-color: white;
+   text-align: center;
+   border: thin silver solid;
+ }
+ figure img {
+    float: left;
+   width: 100%;
+ }
+ 
+ /*barre de recherche*/
+ .search {
+   width: 100%;
+   position: relative;
+   display: flex;
+ }
+ 
+ .searchTerm {
+   width: 100%;
+   border: 1px solid var(--fond);
+   padding: 10px;
+   height: 20px;
+   border-radius: 0 5px 5px 0;
+   outline: none;
+   
+ }
+ 
+ 
+ 
+ .fa-search {
+   
+ font-size: 22px;
+   text-align: center;
+   border-radius: 10px 10px 10px 10px;
+   cursor: pointer;
+   background-color: var(--primary);
+   color: white;
+   padding: 10px ;
+ }
+ .fa-map-marker-alt {
+    padding : 10px;
+    text-align: center;
+    border-radius: 15px 0px 0px 15px;
+    background-color: var(--fond) ;
+    color: black;
+    font-size: 20px;
+ }
+
+ .wrap{
+   width: 100%;
+   top: 70%;
+   left: 50%;
+ }
+
+ ::placeholder {
+    font-weight: bold;
+    color: black;
+ }
