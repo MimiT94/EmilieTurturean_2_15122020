@@ -1,0 +1,224 @@
+:root{
+    font-size: 10px;
+    --primary: #0065FC;
+    --secondary: #DEEBFF ;
+    --fond: #F2F2F2;
+ }
+ 
+body {
+    display: grid;
+    grid-template: 
+    " header header"
+    "info info"
+    "c d"
+    "e e"
+    "f f";
+    grid-template: 2fr 1fr;
+    grid-gap: 30px;
+    padding: 10px 30px;
+    
+}
+
+header {
+    grid-area: header;
+    display: grid;
+   grid-template: 
+    
+    ". nav1"
+    " r1 r1";
+    
+}
+#heb {
+    grid-area: nav1;
+}
+#Hebergement {
+    margin-top: 30px;
+}
+#act {
+    grid-area: nav1;
+}
+.inscrire {
+    grid-area: nav1;
+    padding-top: 0px;
+}
+#logo {
+    grid-area: r1;
+}
+.fa-search {
+    display: none;
+}
+.recherche {
+    width: 100px;
+    border-radius:  0px 10px 10px 0px;;
+    
+}
+.dnone {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+.search {
+    width: 420px ;
+}
+.info {
+    grid-area: info;
+    margin-bottom: 0px;
+}
+.info .btn1 {
+    margin-left: 25px;
+}
+nav li {
+    border-bottom: none;
+    text-align: right;
+    width: 20%;
+    
+}
+.filtres {
+    display: flex;
+    margin-top: 20px;
+}
+
+#nav ul {
+    border-top: 2px solid var(--primary);
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0;
+    margin-right: 115px;
+    width: 80%;
+}
+
+.heber {
+    grid-area: c;
+    border-radius: 20px;
+    background-color: var(--fond);
+    display: grid;
+    grid-template: 
+    "title title title "
+    "card1 card2 card3 "
+    "card4 card5 card6";
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#Hebergement {
+    grid-area: title;
+}
+.card1bis {
+    grid-area: card1;
+}
+.card2bis {
+    grid-area: card2;
+}
+.card3bis {
+    grid-area: card3;
+}
+.card4{
+    grid-area: card4;
+}
+.card5{
+    grid-area: card5;
+}
+.card6{
+    grid-area: card6;
+}
+aside {
+    grid-area: d;
+    padding: 30px;
+    border-radius: 20px;
+}
+.activ {
+    grid-area: e;
+    display: grid;
+    grid-template: 
+    "title title title title"
+    "carte1 carte2 carte4  carte5 "
+    "carte1  carte3 carte4 carte6" ;
+   
+   
+}   
+
+#Activites {
+    grid-area: title;
+}
+.carte1{
+    grid-area: carte1;
+    
+}
+.carte1 figure {
+    height: 445px;
+    width: 300px;
+}
+.carte1 img {
+    height: 380px;
+}
+.carte2{
+    grid-area: carte2;
+}
+.carte2 figure {
+    height: 230px;
+    width: 305px;
+}
+.carte2 img {
+  height: 182px;  
+}
+.carte3{
+    grid-area: carte3;
+    margin-top: 25px;
+}
+.carte3 figure {
+    height: 160px;
+    width: 305px ;
+    
+}
+.carte3 img {
+    height: 105px;
+}
+.carte4{
+    grid-area: carte4;
+}
+.carte4 figure{
+    height: 445px;
+    width: 320px;
+}
+.carte4 img {
+height: 380px;
+
+}
+.carte5{
+    grid-area: carte5;
+}
+.carte5 figure{
+    height: 190px;
+}
+
+.carte6{
+    grid-area: carte6;
+}
+.carte6 figure{
+    height: 190px;
+}
+
+
+article {
+    margin: 0;
+    padding: 0px;
+}
+aside article {
+    padding-bottom: 20px;
+}
+
+footer {
+    grid-area: f;
+    display: grid;
+    text-align: left;
+    grid-template: 
+    "foot1 foot2 foot3 ";
+   
+}
+.foot1 {
+    grid-area: foot1;
+}
+.foot2 {
+    grid-area: foot2;
+}
+.foot {
+    grid-area: foot3;
+}
