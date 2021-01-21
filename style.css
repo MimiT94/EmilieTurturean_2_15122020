@@ -1,0 +1,375 @@
+
+/*****importation du font****/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+
+:root{
+   font-size: 10px;
+   --primary: #0065FC;
+   --secondary: #DEEBFF ;
+   --fond: #F2F2F2;
+}
+
+p {
+   font-size: 1.5rem;
+}
+i {
+   color: var(--primary);
+  
+}
+aside, footer {
+   background-color: var(--fond);
+}
+
+body{
+   font-family: Raleway, sans-serif;
+     
+}
+
+
+/*****nav bar****/
+header  {
+   display: grid;
+    grid-template: 
+    " r1 r2"
+    "nav1 nav1"
+    "recherche recherche"
+    ;
+   font-size: initial;
+   
+   
+}
+header a {
+   color: var(--primary);
+}
+#logo{
+   grid-area: r1;
+   padding-left: 30px;
+}
+.inscrire {
+   grid-area: r2;
+   padding-right: 20px;
+   text-align: right;
+   padding-top: 15px;
+   font-weight: bold;
+}
+#heb {
+   grid-area: nav1;
+}
+#act {
+   grid-area: nav2;
+}
+.info {
+   grid-area: recherche;
+}
+nav {
+   grid-area: nav1;
+}
+nav li {
+   width: 50%;
+   border-bottom: 2px solid var(--primary);
+   text-align: center;
+}
+#act {
+   color: black;
+  
+}
+#act:hover{
+   
+   color: var(--primary);
+}
+#nav ul{
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+}
+
+#heb {
+ display: block;
+ padding: 0 0 10px 0;
+ /** transition-delay: .5s;
+  transition-timing-function: ease-in-out;*/
+}
+#heb:hover {
+   color: black;
+   
+}
+
+/**articles sur le côté**/
+aside {
+   background-color: var(--fond);
+}
+
+.espace {
+   padding:15px;
+}
+
+/*les boutons**/
+.filter {
+   margin-top: 6px;
+}
+.info {
+   padding: 10Px;
+   margin-bottom: 20px;
+}
+.info h2 {
+   font-size: 2.2rem;
+   padding: 10px;
+   
+}
+.info .btn1 {
+   background-color: white; 
+   border: 1px solid lightgray;
+   border-radius: 20px;
+   color: black;
+   text-align: center;
+   text-decoration: none;
+  height: 40px;
+   font-size: 16px;
+   padding: 0;
+   margin-bottom: 20px;
+   line-height: 0;
+   font-weight: bold;
+   
+  
+}
+
+.btn1 i  {
+
+   border-radius: 50%;
+   font-size: 15px;
+   background-color: var(--secondary);
+   height: 40px;
+   width: 40px;
+   padding: 10px;
+  
+  
+}
+
+
+ /*barre de recherche*/
+ .search {
+   width: 100%;
+   display: flex;
+   
+ }
+ 
+ .searchTerm {
+   width: calc(100% - 71px);
+   border: none;
+   border-bottom: 1px solid var(--fond);
+   border-top: 1px solid var(--fond);
+   padding: 0 10px;
+   height: 40px;
+   line-height: 40px;
+   font-size: 1.5rem;
+   
+   
+ }
+ .fa-info {
+   width: 30px;
+   height: 30px;
+   line-height: 30px;
+   text-align: center;
+   border: 1px solid silver;
+   border-radius: 50%;
+    font-size: 12px;
+    margin-right: 10px;
+    
+ }
+ 
+ .info p {
+    margin: 10px;
+    
+ }
+ .gris .fa-star{
+    color: lightgray ;
+ }
+
+ .fa-map-marker-alt {
+    text-align: center;
+    border-radius: 10px 0px 0px 10px;
+    background-color: var(--fond) ;
+    color: black;
+    font-size: 15px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+ }
+
+ .recherche  {
+   
+   font-size: 15px;
+   text-align: center;
+   border-radius: 10px 10px 10px 10px;
+   cursor: pointer;
+   text-decoration: none; 
+ margin-left: -9px;
+   border:none; 
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+   background-color: var(--primary);
+   color: white  ;
+   padding: 0px;
+ }
+ 
+.fa-search {
+   color:white;
+   background-color: var(--primary);
+}
+ ::placeholder {
+    font-weight: bold;
+    color: black;
+ }
+
+.fa-info-circle { 
+   background-color: var(--primary) !important;
+   color: white !important;
+   font-size: 2rem;
+   border-radius: 40px;
+   border: var(--fond);
+}
+.fa-chart-line /*****popularité****/
+{
+   color: black;
+  padding-left: 25%;
+}
+aside h1, #Activites, #Hebergement{
+   margin-bottom: 10px;
+   font-size: 2rem;
+   font-weight: bolder;
+   padding-left: 25px;
+  
+}
+article h2 {
+   padding-left: 25px;
+   margin-bottom: 25px;
+}
+
+
+/*****les cartes img****/
+article a {
+   color: black;
+}
+   h3 {
+      font-size: 1.6rem;
+      font-weight: bold;
+   }
+
+   .fa-star {
+      font-size: 10px;
+      }
+
+
+ figcaption {
+    position: relative;
+    width: 100%;
+    padding : 10px 20px;
+  
+    
+ }
+.card1 a {
+   display: block;
+   width: 40%;
+}
+ .card1 {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     border-radius: 20px;
+     max-width: 335px;
+     max-height: 145px;
+     text-align: left;
+     background-color: white;
+     display: flex;
+     margin-left: 20px;
+     
+}
+.card1 img {
+ 
+border-radius: 20px 0px 0px 20px;
+ object-fit: cover;
+ width: 130px;
+ height: 140px;
+ padding: 5px;
+}
+
+.card1 div {
+   position: absolute;
+   bottom: 10px; 
+}
+.card2 {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     border-radius: 20px;
+   
+     text-align: left;
+     background-color: white;
+     padding:0px;
+    margin: 17px;
+  
+ }
+ .card2 img {
+    width: 100%;
+    height: 115px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    padding: 5px;
+   
+ }
+.card3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: 335px;
+    height: 191px;
+    background-color: white;
+    padding:0px;
+    margin: 15px;
+ 
+}
+.card3 img {
+   width: 335px;
+   height: 137px;
+   border-radius: 20px 20px 0px 0px;
+   object-fit: cover;
+   padding: 0px;
+  
+}
+
+/**articles **/
+ article {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    
+ }
+.activ  {
+   margin-top: 30px;
+}
+#afficherplus {
+   padding-left: 20px;
+}
+/*****footer ***/
+footer {
+   padding-top: 10px;
+}
+
+footer ul li {
+   text-decoration: none;
+   padding: 5px;
+   padding-left: 35px;
+   font-size: 1.4rem;
+   
+}
+
+footer h3 {
+   padding-left: 35px;
+}
+
+footer a {
+   color: black;
+}
+
+
+
+
+
+
+
