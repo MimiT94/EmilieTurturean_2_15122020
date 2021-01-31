@@ -7,43 +7,85 @@
  
 body {
     display: grid;
-    grid-template: 
+    grid-template-areas: 
     " header header"
     "info info"
-    "c d"
-    "e e"
-    "f f";
-    grid-template: 2fr 1fr;
+    "heber pop"
+    "act act"
+    "foot foot";
     grid-gap: 30px;
-    padding: 10px 30px;
     
 }
 
 header {
     grid-area: header;
     display: grid;
-   grid-template: 
+   grid-template-areas: 
+    "logo  nav1 inscrire";
+    grid-template-columns: 40% 50% 10%;
     
-    ". nav1"
-    " r1 r1";
+}
+
+nav li:last-child {
+    border-bottom: none;
+    border-top: 2px solid white;
+}
+nav li:last-child:hover{
+    border-top: 2px solid var(--primary);
     
+}
+nav li:first-child{
+    border-top: 2px solid var(--primary);
+    
+    
+
+}
+#logo{
+    padding-top: 20px;
+    padding-left: 40px;
+    grid-area: logo;
+}
+nav li {
+    padding-top: 20px;
+}
+.info {
+    margin: 0px;
+}
+.heber {
+    margin-left: 40px;
+}
+aside {
+    margin-right: 40px;
+    padding: 40px;
 }
 #heb {
     grid-area: nav1;
-}
-#Hebergement {
-    margin-top: 30px;
-}
-#act {
-    grid-area: nav1;
+    
 }
 .inscrire {
+    grid-area: inscrire;
+    padding-top: 20px;
+    padding-right: 40px;
+}
+.activ {
+    padding: 0;
+    margin: 40px;
+
+}
+
+#act {
     grid-area: nav1;
-    padding-top: 0px;
+   
+   
+  
 }
-#logo {
-    grid-area: r1;
+
+.card1 {
+    max-width: 340px;
 }
+
+
+
 .fa-search {
     display: none;
 }
@@ -63,13 +105,29 @@ header {
 .info {
     grid-area: info;
     margin-bottom: 0px;
+    padding: 0;
+    margin-left: 40px;
+}
+.info h2 {
+    padding: 0;
 }
 .info .btn1 {
     margin-left: 25px;
 }
+.info p {
+    margin: 0;
+}
+
+.btn1:hover {
+    background-color: var(--primary);
+    color: white;
+    transition-timing-function: ease-in-out;
+    transition-delay: .5s;
+}
+
 nav li {
     border-bottom: none;
-    text-align: right;
+    text-align: center;
     width: 20%;
     
 }
@@ -79,138 +137,146 @@ nav li {
 }
 
 #nav ul {
-    border-top: 2px solid var(--primary);
+    
     display: flex;
     justify-content: flex-end;
     margin-top: 0;
-    margin-right: 115px;
-    width: 80%;
+   
 }
 
 .heber {
-    grid-area: c;
+    grid-area: heber;
     border-radius: 20px;
     background-color: var(--fond);
     display: grid;
     grid-template: 
     "title title title "
     "card1 card2 card3 "
-    "card4 card5 card6";
+    "card4 card5 card6"
+    "afficherplus afficherplus afficherplus";
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    padding: 40px;
 }
-#Hebergement {
+#hebergement {
     grid-area: title;
+    text-align: left;
 }
-.card1bis {
+.card1heb {
     grid-area: card1;
 }
-.card2bis {
+.card2heb {
     grid-area: card2;
 }
-.card3bis {
+.card3heb {
     grid-area: card3;
 }
-.card4{
+.card4heb{
     grid-area: card4;
 }
-.card5{
+.card5heb{
     grid-area: card5;
 }
-.card6{
+.card6heb{
     grid-area: card6;
 }
 aside {
-    grid-area: d;
-    padding: 30px;
+    grid-area: pop;
+   
     border-radius: 20px;
 }
+#afficherplus {
+    grid-area: afficherplus;
+    text-align: left;
+}
 .activ {
-    grid-area: e;
+    grid-area: act;
     display: grid;
-    grid-template: 
+    grid-template-areas: 
     "title title title title"
-    "carte1 carte2 carte4  carte5 "
-    "carte1  carte3 carte4 carte6" ;
-   
-   
-}   
+    "carte1 carte2 carte4  carte5"
+    "carte1 carte2 carte4 ."
+    "carte1  . carte4 carte6"
+    "carte1  carte3 carte4 carte6";
+    grid-template-rows: 30px 100px 35px 0px 185px;
+    grid-row-gap: 40px;
+    grid-template-columns: repeat(4, 300px);
+    grid-column-gap:50px ;
 
-#Activites {
+}   
+.card3 figcaption {
+   
+ text-align: left;
+ padding:0 10px ;
+}
+
+#activites {
     grid-area: title;
+    text-align: left;
+}
+.activ a {
+    display: block;
 }
 .carte1{
     grid-area: carte1;
+   
     
 }
-.carte1 figure {
-    height: 445px;
-    width: 300px;
-}
+
 .carte1 img {
-    height: 380px;
+  height: 360px;
 }
 .carte2{
     grid-area: carte2;
 }
-.carte2 figure {
-    height: 230px;
-    width: 305px;
-}
+
 .carte2 img {
-  height: 182px;  
+  height: 180px;
 }
 .carte3{
     grid-area: carte3;
-    margin-top: 25px;
+   
 }
-.carte3 figure {
-    height: 160px;
-    width: 305px ;
-    
-}
+
 .carte3 img {
-    height: 105px;
+   height: 110px;
 }
 .carte4{
     grid-area: carte4;
 }
-.carte4 figure{
-    height: 445px;
-    width: 320px;
-}
-.carte4 img {
-height: 380px;
 
+.carte4 img {
+
+    height: 360px;
 }
 .carte5{
     grid-area: carte5;
 }
-.carte5 figure{
-    height: 190px;
-}
 
+.carte5 img { 
+    height: 140px ;
+}
 .carte6{
     grid-area: carte6;
 }
-.carte6 figure{
-    height: 190px;
+
+.carte6 img {
+    height: 150px;
 }
 
-
-article {
-    margin: 0;
-    padding: 0px;
+article  a{
+    display: block;
 }
 aside article {
     padding-bottom: 20px;
 }
 
 footer {
-    grid-area: f;
+    grid-area: foot;
     display: grid;
     text-align: left;
-    grid-template: 
-    "foot1 foot2 foot3 ";
+    grid-template-areas: 
+    "foot1 foot2 foot3";
    
 }
 .foot1 {
@@ -221,4 +287,8 @@ footer {
 }
 .foot {
     grid-area: foot3;
+}
+
+.dnone {
+    display: inline;
 }

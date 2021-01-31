@@ -1,6 +1,78 @@
-article {
-    margin-left: 25px;
+.heber {
+    display: grid;
+    grid-template-areas: 
+    "title title"
+    "card1heb card2heb"
+    "card3heb card4heb"
+    "card5heb card6heb"
+    "afficherplus afficherplus";
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
 }
+
+#hebergement {
+    grid-area: title;
+    text-align: center;
+}
+.card1heb {
+    grid-area: card1heb;
+}
+.card2heb {
+    grid-area: card2heb;
+}
+.card3heb {
+    grid-area: card3heb;
+}
+.card4heb{
+    grid-area: card4heb;
+}
+.card5heb{
+    grid-area: card5heb;
+}
+.card6heb{
+    grid-area: card6heb;
+}
+#afficherplus {
+    grid-area: afficherplus;
+    text-align: right;
+}
+.card3 figcaption{
+    padding: 0;
+    text-align: center;
+}
+.activ {
+    display: grid;
+    grid-template: 
+    "activites activites "
+    "carte1 carte2"
+    "carte3 carte4 "
+    "carte5 carte6";
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+#activites {
+    grid-area: activites;
+    text-align: center;
+}
+.carte1{
+    grid-area: carte1;
+}
+.carte2{
+    grid-area: carte2;
+}
+.carte3{
+    grid-area: carte3;
+}
+.carte4{
+    grid-area: carte4;
+}
+.carte5{
+    grid-area: carte5;
+}
+.carte6{
+    grid-area: carte6;
+}
+
 footer {
     text-align: center;
 }

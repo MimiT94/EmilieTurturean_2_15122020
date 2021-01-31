@@ -22,17 +22,17 @@
         <nav id="nav">
             <ul>
                 <li>
-                    <a href="#Hebergement" id="heb">Hébergements</a>
+                    <a href="#hebergement" id="heb">Hébergements</a>
                 </li>
                 <li >
-                    <a href="#Activites" id="act">Activités</a>
+                    <a href="#activites" id="act">Activités</a>
                 </li>
             </ul>
         </nav>
     </header>
 
 <!--- filtres +  barre de recherche-->
-    <div class="info">
+    <form class="info">
         <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
         <p>En plein centre ville ou en pleine nature</p>
         <div class="wrap search">
@@ -47,14 +47,14 @@
             <button class="btn1"><i class="fas fa-heart"></i><span class="espace">Romantique</span></button> 
             <button class="btn1"><i class="fas fa-dog"></i><span class="espace">Animaux autorisés</span></button>
         </div>     
-    <p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+        <p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
         
-    </div>
+    </form>
 
 
     <!--- Side bar populaire-->
     <aside>
-        <h1>Les plus populaires<span class="espace"><i class="fas fa-chart-line"></i></span></h1>                   
+        <h1>Les plus populaires<i class="fas fa-chart-line"></i></h1>                   
         
         <article>
             <a href="#">
@@ -87,7 +87,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>  
-                              <span class="gris"><i class="fas fa-star"></i></span> 
+                            <i class="fas fa-star gris" ></i>
                         </div>
                     </figcaption>
                 </figure>
@@ -105,7 +105,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i> 
-                                <span class="gris"><i class="fas fa-star"></i></span> 
+                            <i class="fas fa-star gris"></i>
                         </div>
                     </figcaption>
                 </figure>
@@ -114,8 +114,8 @@
     </aside>
         <!--- Articles Hebergements-->
     <section class="heber">
-        <h1 id="Hebergement">Hébérgements à Marseille</h1>
-        <article class="card1bis">
+        <h1 id="hebergement">Hébérgements à Marseille</h1>
+        <article class="card1heb">
             <a href="#">
                 <figure class="card2">
                     <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
@@ -126,15 +126,15 @@
                                 <i class="fas fa-star"></i> 
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i> 
-                                    <span class="gris"><i class="fas fa-star"></i></span> 
+                                <i class="fas fa-star gris"></i>
                         </figcaption> 
                 </figure>
             </a>
         </article>
-        <article class="card2bis">
+        <article class="card2heb">
             <a href="#">
                 <figure class="card2">
-                    <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"alt="Hôtel du port">
+                    <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
                         <figcaption>
                             <h3>Hôtel du port</h3> 
                             <p>Nuit à partir de 52€</p>
@@ -143,14 +143,15 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                </figure>
                         </figcaption>
+                </figure>
+                        
             </a>
         </article>
-        <article class="card3bis">
+        <article class="card3heb">
             <a href="#">
                 <figure class="card2">
-                    <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"alt="Hôtel Les mouettes">
+                    <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes">
                         <figcaption>
                             <h3>Hôtel Les mouettes</h3>  
                             <p>Nuit à partir de 76€</p>
@@ -158,12 +159,13 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i> 
-                                    <span class="gris"><i class="fas fa-star"></i></span>
-                </figure>
+                                <i class="fas fa-star gris"></i>
                         </figcaption>
+                </figure>
+                        
             </a>
         </article>
-        <article class="card4"> 
+        <article class="card4heb"> 
             <a href="#">
                 <figure class="card2">
                     <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
@@ -173,15 +175,17 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i> 
-                                    <span class="gris"><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-                </figure>
+                                <i class="fas fa-star gris"></i>
+                                <i class="fas fa-star gris"></i>
                         </figcaption>
+                </figure>
+                        
             </a>
         </article>
-        <article class="card5"> 
+        <article class="card5heb"> 
             <a href="#">
                 <figure class="card2">
-                    <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"alt="Auberge Le Panier">
+                    <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
                         <figcaption>
                             <h3>Auberge Le Panier</h3> 
                             <p>Nuit à partir de 23€</p>
@@ -189,15 +193,16 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                    <span class="gris"><i class="fas fa-star"></i></span>
-                </figure>
+                                <i class="fas fa-star gris"></i>
                         </figcaption>
+                </figure>
+                        
             </a>
         </article>
         <article class="card6"> 
             <a href="#">
                 <figure class="card2">
-                    <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"alt="Hôtel chez Amina">
+                    <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
                         <figcaption>
                             <h3>Hôtel chez Amina</h3> 
                             <p>Nuit à partir de 96€</p> 
@@ -206,19 +211,20 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                </figure>
                         </figcaption>
+                </figure>
+                        
             </a>
         </article>
         <h2 id="afficherplus"><a href="#">Afficher plus</a></h2>
     </section>
  <!--- Activités-->
     <section class="activ">
-        <h1 id="Activites">Activités à Marseilles</h1>
+        <h1 id="activites">Activités à Marseilles</h1>
         <article class="carte1">
             <a href="#">
                 <figure class="card3">
-                    <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"alt="Vieux Port">
+                    <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
                         <figcaption>
                             <h3>Vieux Port</h3>
                         </figcaption>
@@ -228,7 +234,7 @@
         <article class="carte2">
             <a href="#">
                 <figure class="card3">
-                    <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg "alt="Fort de Pomègues">
+                    <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg " alt="Fort de Pomègues">
                         <figcaption>
                             <h3>Fort de Pomègues</h3>
                         </figcaption>
@@ -238,7 +244,7 @@
         <article class="carte3">
             <a href="#">
                 <figure class="card3"> 
-                    <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"alt="Îles du Frioul">
+                    <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
                         <figcaption> 
                             <h3>Îles du Frioul</h3>  
                         </figcaption>
@@ -258,7 +264,7 @@
         <article class="carte5">
             <a href="#">
                 <figure class="card3">
-                    <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"alt="Notre-Dame-de-la-Garde">
+                    <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
                         <figcaption>
                             <h3>Notre-Dame-de-la-Garde</h3>
                         </figcaption>
@@ -268,7 +274,7 @@
         <article class="carte6">
             <a href="#"> 
                 <figure class="card3">
-                    <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"alt="Parc Longchamp">
+                    <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
                         <figcaption>
                             <h3>Parc Longchamp</h3> 
                         </figcaption> 
