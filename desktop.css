@@ -1,10 +1,10 @@
-:root{
+:root {
     font-size: 10px;
     --primary: #0065FC;
-    --secondary: #DEEBFF ;
+    --secondary: #DEEBFF;
     --fond: #F2F2F2;
- }
- 
+}
+
 body {
     display: grid;
     grid-template-areas: 
@@ -14,59 +14,68 @@ body {
     "act act"
     "foot foot";
     grid-gap: 30px;
-    
+
 }
 
 header {
     grid-area: header;
     display: grid;
-   grid-template-areas: 
+    grid-template-areas:
     "logo  nav1 inscrire";
     grid-template-columns: 40% 50% 10%;
-    
+
 }
 
 nav li:last-child {
     border-bottom: none;
     border-top: 2px solid white;
 }
-nav li:last-child:hover{
+
+nav li:last-child:hover {
     border-top: 2px solid var(--primary);
-    
-}
-nav li:first-child{
-    border-top: 2px solid var(--primary);
-    
-    
 
 }
-#logo{
+
+nav li:first-child {
+    border-top: 2px solid var(--primary);
+
+
+}
+
+#logo {
     padding-top: 20px;
     padding-left: 40px;
     grid-area: logo;
 }
+
 nav li {
     padding-top: 20px;
 }
+
 .info {
-    margin: 0px;
+    margin: 0;
 }
+
 .heber {
     margin-left: 40px;
 }
+
 aside {
     margin-right: 40px;
     padding: 40px;
 }
+
 #heb {
     grid-area: nav1;
-    
+
 }
+
 .inscrire {
     grid-area: inscrire;
     padding-top: 20px;
     padding-right: 40px;
 }
+
 .activ {
     padding: 0;
     margin: 40px;
@@ -75,9 +84,8 @@ aside {
 
 #act {
     grid-area: nav1;
-   
-   
-  
+
+
 }
 
 .card1 {
@@ -85,35 +93,41 @@ aside {
 }
 
 
-
 .fa-search {
     display: none;
 }
+
 .recherche {
     width: 100px;
-    border-radius:  0px 10px 10px 0px;;
-    
+    border-radius: 0 10px 10px 0;;
+
 }
+
 .dnone {
     font-weight: bold;
     text-align: center;
     padding: 10px;
 }
+
 .search {
-    width: 420px ;
+    width: 420px;
 }
+
 .info {
     grid-area: info;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding: 0;
     margin-left: 40px;
 }
+
 .info h2 {
     padding: 0;
 }
+
 .info .btn1 {
     margin-left: 25px;
 }
+
 .info p {
     margin: 0;
 }
@@ -129,19 +143,20 @@ nav li {
     border-bottom: none;
     text-align: center;
     width: 20%;
-    
+
 }
+
 .filtres {
     display: flex;
     margin-top: 20px;
 }
 
 #nav ul {
-    
+
     display: flex;
     justify-content: flex-end;
     margin-top: 0;
-   
+
 }
 
 .heber {
@@ -158,37 +173,47 @@ nav li {
     grid-gap: 30px;
     padding: 40px;
 }
+
 #hebergement {
     grid-area: title;
     text-align: left;
 }
+
 .card1heb {
     grid-area: card1;
 }
+
 .card2heb {
     grid-area: card2;
 }
+
 .card3heb {
     grid-area: card3;
 }
-.card4heb{
+
+.card4heb {
     grid-area: card4;
 }
-.card5heb{
+
+.card5heb {
     grid-area: card5;
 }
-.card6heb{
+
+.card6heb {
     grid-area: card6;
 }
+
 aside {
     grid-area: pop;
-   
+
     border-radius: 20px;
 }
+
 #afficherplus {
     grid-area: afficherplus;
     text-align: left;
 }
+
 .activ {
     grid-area: act;
     display: grid;
@@ -198,50 +223,56 @@ aside {
     "carte1 carte2 carte4 ."
     "carte1  . carte4 carte6"
     "carte1  carte3 carte4 carte6";
-    grid-template-rows: 30px 100px 35px 0px 185px;
+    grid-template-rows: 30px 100px 35px 0 185px;
     grid-row-gap: 40px;
     grid-template-columns: repeat(4, 300px);
-    grid-column-gap:50px ;
+    grid-column-gap: 50px;
 
-}   
+}
+
 .card3 figcaption {
-   
- text-align: left;
- padding:0 10px ;
+
+    text-align: left;
+    padding: 0 10px;
 }
 
 #activites {
     grid-area: title;
     text-align: left;
 }
+
 .activ a {
     display: block;
 }
-.carte1{
+
+.carte1 {
     grid-area: carte1;
-   
-    
+
+
 }
 
 .carte1 img {
-  height: 360px;
+    height: 360px;
 }
-.carte2{
+
+.carte2 {
     grid-area: carte2;
 }
 
 .carte2 img {
-  height: 180px;
+    height: 180px;
 }
-.carte3{
+
+.carte3 {
     grid-area: carte3;
-   
+
 }
 
 .carte3 img {
-   height: 110px;
+    height: 110px;
 }
-.carte4{
+
+.carte4 {
     grid-area: carte4;
 }
 
@@ -249,14 +280,16 @@ aside {
 
     height: 360px;
 }
-.carte5{
+
+.carte5 {
     grid-area: carte5;
 }
 
-.carte5 img { 
-    height: 140px ;
+.carte5 img {
+    height: 140px;
 }
-.carte6{
+
+.carte6 {
     grid-area: carte6;
 }
 
@@ -264,9 +297,10 @@ aside {
     height: 150px;
 }
 
-article  a{
+article a {
     display: block;
 }
+
 aside article {
     padding-bottom: 20px;
 }
@@ -277,14 +311,17 @@ footer {
     text-align: left;
     grid-template-areas: 
     "foot1 foot2 foot3";
-   
+
 }
+
 .foot1 {
     grid-area: foot1;
 }
+
 .foot2 {
     grid-area: foot2;
 }
+
 .foot {
     grid-area: foot3;
 }

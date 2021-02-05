@@ -14,32 +14,41 @@
     grid-area: title;
     text-align: center;
 }
+
 .card1heb {
     grid-area: card1heb;
 }
+
 .card2heb {
     grid-area: card2heb;
 }
+
 .card3heb {
     grid-area: card3heb;
 }
-.card4heb{
+
+.card4heb {
     grid-area: card4heb;
 }
-.card5heb{
+
+.card5heb {
     grid-area: card5heb;
 }
-.card6heb{
+
+.card6heb {
     grid-area: card6heb;
 }
+
 #afficherplus {
     grid-area: afficherplus;
     text-align: right;
 }
-.card3 figcaption{
+
+.card3 figcaption {
     padding: 0;
     text-align: center;
 }
+
 .activ {
     display: grid;
     grid-template: 
@@ -50,26 +59,33 @@
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr;
 }
+
 #activites {
     grid-area: activites;
     text-align: center;
 }
-.carte1{
+
+.carte1 {
     grid-area: carte1;
 }
-.carte2{
+
+.carte2 {
     grid-area: carte2;
 }
-.carte3{
+
+.carte3 {
     grid-area: carte3;
 }
-.carte4{
+
+.carte4 {
     grid-area: carte4;
 }
-.carte5{
+
+.carte5 {
     grid-area: carte5;
 }
-.carte6{
+
+.carte6 {
     grid-area: carte6;
 }
 

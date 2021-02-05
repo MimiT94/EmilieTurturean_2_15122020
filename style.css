@@ -1,364 +1,397 @@
-
 /*****importation du font****/
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
 
-:root{
-   font-size: 10px;
-   --primary: #0065FC;
-   --secondary: #DEEBFF;
-   --fond: #F2F2F2;
+:root {
+    font-size: 10px;
+    --primary: #0065FC;
+    --secondary: #DEEBFF;
+    --fond: #F2F2F2;
 }
 
 p {
-   font-size: 1.5rem;
-}
-i {
-   color: var(--primary); 
-}
-aside, footer {
-   background-color: var(--fond);
+    font-size: 1.5rem;
 }
 
-body{
-   font-family: Raleway, sans-serif;   
+i {
+    color: var(--primary);
+}
+
+aside, footer {
+    background-color: var(--fond);
+}
+
+body {
+    font-family: Raleway, sans-serif;
 }
 
 /*****nav bar****/
-header  {
+header {
     display: grid;
     grid-template: 
     "logo inscrire"
     "nav1 nav1";
     font-size: initial;
 }
+
 header a {
-   color: var(--primary);
+    color: var(--primary);
 }
-#logo{
-   grid-area: logo;
-   padding-left: 30px;
+
+#logo {
+    grid-area: logo;
+    padding-left: 30px;
 }
+
 .inscrire {
-   grid-area: inscrire;
-   padding-right: 20px;
-   text-align: right;
-   padding-top: 15px;
-   font-weight: bold;
+    grid-area: inscrire;
+    padding-right: 20px;
+    text-align: right;
+    padding-top: 15px;
+    font-weight: bold;
 }
 
 nav {
-   grid-area: nav1;
+    grid-area: nav1;
 }
+
 nav li {
-   width: 50%;
-   border-bottom: 2px solid var(--primary);
-   text-align: center;
+    width: 50%;
+    border-bottom: 2px solid var(--primary);
+    text-align: center;
 }
+
 nav li:last-child {
-   border-bottom: 2px solid var(--fond);
+    border-bottom: 2px solid var(--fond);
 }
+
 #act {
-   color: black;
-  
+    color: black;
+
 }
-#act:hover{
-   
-   color: var(--primary);
+
+#act:hover {
+
+    color: var(--primary);
 }
-#nav ul{
-   display: flex;
-   justify-content: space-around;
-  
+
+#nav ul {
+    display: flex;
+    justify-content: space-around;
+
 }
 
 #heb {
- display: block;
- padding: 0 0 10px 0;
- /** transition-delay: .5s;
-  transition-timing-function: ease-in-out;*/
+    display: block;
+    padding: 0 0 10px 0;
+    /** transition-delay: .5s;
+     transition-timing-function: ease-in-out;*/
 }
+
 #heb:hover {
-   color: black;   
+    color: black;
 }
 
 /**articles sur le côté**/
 aside {
-   background-color: var(--fond);
-   padding: 20px;
+    background-color: var(--fond);
+    padding: 20px;
 }
 
 .espace {
-   padding:15px;
+    padding: 15px;
 }
 
 /*les boutons**/
 .filter {
-   margin-top: 6px;
+    margin-top: 6px;
 }
+
 .info {
-   padding: 10Px;
-   margin-bottom: 20px;
+    padding: 10Px;
+    margin-bottom: 20px;
 }
+
 .info h2 {
-   font-size: 2.2rem;
-   padding: 10px;
-   
+    font-size: 2.2rem;
+    padding: 10px;
+
 }
+
 .info p {
-   padding-bottom: 10px;
+    padding-bottom: 10px;
 }
+
 .info .btn1 {
-   background-color: white; 
-   border: 1px solid lightgray;
-   border-radius: 20px;
-   color: black;
-   text-align: center;
-   text-decoration: none;
-   height: 40px;
-   font-size: 16px;
-   padding: 0;
-   margin-bottom: 20px;
-   line-height: 40px;
-   font-weight: bold;
-}
-
-.btn1 i  {
-   border-radius: 50%;
-   font-size: 15px;
-   background-color: var(--secondary);
-   height: 40px;
-   width: 40px;
-   line-height: 40px;
-   margin: -2px;
-}
-
-
- /*barre de recherche*/
- .search {
-   width: 100%;
-   display: flex;
- }
- 
- .searchTerm {
-   width: calc(100% - 71px);
-   border: none;
-   border-bottom: 1px solid var(--fond);
-   border-top: 1px solid var(--fond);
-   padding: 0 10px;
-   height: 40px;
-   line-height: 40px;
-   font-size: 1.5rem;
- }
- .fa-info {
-   width: 30px;
-   height: 30px;
-   line-height: 30px;
-   text-align: center;
-   border: 1px solid silver;
-   border-radius: 50%;
-   font-size: 12px;
-   margin-right: 10px;  
- }
- 
- .info p {
-    margin: 10px;
-    
- }
- .gris {
-    color: lightgray ;
- }
-
- .fa-map-marker-alt {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    color: black;
     text-align: center;
-    border-radius: 10px 0px 0px 10px;
-    background-color: var(--fond) ;
+    text-decoration: none;
+    height: 40px;
+    font-size: 16px;
+    padding: 0;
+    margin-bottom: 20px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.btn1 i {
+    border-radius: 50%;
+    font-size: 15px;
+    background-color: var(--secondary);
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin: -2px;
+}
+
+
+/*barre de recherche*/
+.search {
+    width: 100%;
+    display: flex;
+}
+
+.searchTerm {
+    width: calc(100% - 71px);
+    border: none;
+    border-bottom: 1px solid var(--fond);
+    border-top: 1px solid var(--fond);
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.5rem;
+}
+
+.fa-info {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid silver;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.info p {
+    margin: 10px;
+
+}
+
+.gris {
+    color: lightgray;
+}
+
+.fa-map-marker-alt {
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+    background-color: var(--fond);
     color: black;
     font-size: 15px;
     height: 40px;
     width: 40px;
     line-height: 40px;
- }
+}
 
- .recherche  {
-   
-   font-size: 15px;
-   text-align: center;
-   border-radius: 10px 10px 10px 10px;
-   cursor: pointer;
-   text-decoration: none; 
-   margin-left: -9px;
-   border:none; 
-   width: 40px;
-   height: 40px;
-   line-height: 40px;
-   background-color: var(--primary);
-   color: white  ;
-   padding: 0px;
- }
- .dnone{
-   display: none;
+.recherche {
+
+    font-size: 15px;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: -9px;
+    border: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: var(--primary);
+    color: white;
+    padding: 0;
 }
+
+.dnone {
+    display: none;
+}
+
 .fa-search {
-   color:white;
-   background-color: var(--primary);
+    color: white;
+    background-color: var(--primary);
 }
- ::placeholder {
+
+::placeholder {
     font-weight: bold;
     color: black;
- }
-
-.fa-info-circle { 
-   background-color: var(--primary) !important;
-   color: white !important;
-   font-size: 2rem;
-   border-radius: 40px;
-   border: var(--fond);
 }
+
+.fa-info-circle {
+    background-color: var(--primary) !important;
+    color: white !important;
+    font-size: 2rem;
+    border-radius: 40px;
+    border: var(--fond);
+}
+
 .fa-chart-line /*****popularité****/
 {
-   color: black;
-   float: right;
- 
+    color: black;
+    float: right;
+
 }
-aside h1, #activites, #hebergement{
-   
-   font-size: 2rem;
-   font-weight: bolder;
-  
+
+aside h1, #activites, #hebergement {
+
+    font-size: 2rem;
+    font-weight: bolder;
+
 }
+
 aside h1 {
-   padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 
 /*****les cartes img****/
 article a {
-   color: black;
-   display: block;
+    color: black;
+    display: block;
 }
 
 h3 {
-font-size: 1.6rem;
-font-weight: bold;
+    font-size: 1.6rem;
+    font-weight: bold;
 }
+
 .fa-star {
-font-size: 10px;
+    font-size: 10px;
 }
 
 
 .card1 figure {
-   height: 100px;
+    height: 100px;
 }
 
- .card1 {
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-   border-radius: 20px;
-   text-align: left;
-   background-color: white;
-   display: flex;
-   height: 145px;
-   margin-bottom: 20px;
-  
-     
+.card1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: left;
+    background-color: white;
+    display: flex;
+    height: 145px;
+    margin-bottom: 20px;
+
+
 }
+
 .card1 img {
- 
- border-radius: 20px 0px 0px 20px;
- object-fit: cover;
- padding: 5px;
- width: 130px;
- 
+
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+    padding: 5px;
+    width: 130px;
+
 }
-.card1 figcaption{
-   padding: 10px;
-   position: relative;
+
+.card1 figcaption {
+    padding: 10px;
+    position: relative;
 }
 
 .card1 div {
-   position: absolute;
-   bottom: 10px; 
+    position: absolute;
+    bottom: 10px;
 }
+
 .card2 a, .card3 a {
-   display: block;
+    display: block;
 }
 
 .heber {
-   padding: 20px;
+    padding: 20px;
 }
-#afficherplus a {
-   color: black;
-   font-size: 1.4rem;
-}
-.card2 {
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-   border-radius: 20px;
-   text-align: left;
-   background-color: white;
-   margin-bottom: 20px;
-   
 
- }
- .card2 figcaption {
+#afficherplus a {
+    color: black;
+    font-size: 1.4rem;
+}
+
+.card2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: left;
+    background-color: white;
+    margin-bottom: 20px;
+
+
+}
+
+.card2 figcaption {
     height: 80px;
     padding: 10px;
- }
- .card2 img {
+}
+
+.card2 img {
     width: 100%;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0 0;
     object-fit: cover;
     height: 115px;
     padding: 5px;
-   
 
- }
- .activ {
+
+}
+
+.activ {
     padding: 20px;
- }
+}
+
 .card3 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     background-color: white;
     margin-bottom: 20px;
-  
- 
-}
-.card3 img {
-  
-   border-radius: 20px 20px 0px 0px;
-   object-fit: cover;
-   height: 135px;
-   width: 100%;
 
-  
+
 }
+
+.card3 img {
+
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    height: 135px;
+    width: 100%;
+
+
+}
+
 .card3 figcaption {
-  height: 50px;
-  padding: 0 10px;
-  line-height: 50px;
+    height: 50px;
+    padding: 0 10px;
+    line-height: 50px;
 }
 
 /**articles **/
- 
+
 /*****footer ***/
 footer {
-   padding-top: 10px;
+    padding-top: 10px;
 }
 
 footer ul li {
-   text-decoration: none;
-   padding: 5px;
-   padding-left: 35px;
-   font-size: 1.4rem;
-   
+    text-decoration: none;
+    padding: 5px 5px 5px 35px;
+    font-size: 1.4rem;
+
 }
 
 footer h3 {
-   padding-left: 35px;
+    padding-left: 35px;
 }
 
 footer a {
-   color: black;
+    color: black;
 }
 
 
